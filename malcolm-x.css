@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica;
+    background: #f9f9f9;
+    color: #111;
+    line-height: 1.6;
+}
+
+#navbar, #footer {
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav-title { font-weight: bold; font-size: 22px; color: #d90429; }
+.nav-links, .date-list, .external-links { list-style: none; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: bold; }
+.nav-links a:hover { color: #d90429; }
+
+#hero {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto 0;
+    text-align: left;
+    border-bottom: 3px solid #d90429;
+    padding-bottom: 15px;
+}
+
+#hero h1 { font-size: 40px; color: #d90429; text-transform: uppercase; }
+#hero p { font-weight: bold; color: #1b7a3d; font-size: 16px; margin: 0; }
+
+#container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.left-col { width: 65%; }
+.right-col { width: 35%; border-left: 3px solid #d90429; padding-left: 35px; }
+.card { margin-bottom: 40px; }
+
+h2 { font-size: 24px; color: #d90429; border-bottom: 2px solid #1b7a3d; padding-bottom: 8px; margin-bottom: 18px; }
+h3 { margin: 20px 0 8px; color: #1b7a3d; }
+p { margin-bottom: 12px; }
+
+img { width: 100%; margin-bottom: 15px; display: block; }
+.gallery { display: flex; gap: 12px; }
+.gallery img { width: 32%; height: 220px; object-fit: cover; margin: 0; }
+
+.date-list li { padding: 12px 0; border-bottom: 1px solid #ddd; font-size: 14px; }
+.date-list span { background: #d90429; color: #fff; font-weight: bold; padding: 3px 8px; margin-right: 8px; }
+
+.external-links a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1b7a3d;
+}
+
+.external-links a:hover { background: #d90429; }
+
+@media screen and (max-width: 768px) {
+    #navbar, #footer, #container, .gallery { flex-direction: column; text-align: center; }
+    .left-col, .right-col, .gallery img { width: 100%; height: auto; }
+    .right-col { border: none; padding: 0; }
+}
