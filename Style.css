@@ -1,7 +1,7 @@
-/* ---------- Couleurs et polices (modifiez-les ici) ----------
+/* Couleurs et polices
    Palette inspirée de la pochette de « Une main lave l'autre » (UMLA) :
    ciel bleu, titre jaune, t-shirt rouge, horizon orangé.
-   Valeurs estimées à l'œil : affinez-les avec une pipette si besoin. */
+   Valeurs estimées à l'œil. */
 :root {
   --noir: #16100f;        /* noir chaud (peau, ombres) : menu, pied de page, textes */
   --bleu: #1787b5;        /* ciel */
@@ -10,7 +10,6 @@
   --jaune: #f2e84b;       /* titre UMLA */
   --rouge: #d9242e;       /* t-shirt */
   --orange: #f0a34a;      /* horizon */
-  --sable: #f0a34a;       /* texte secondaire sur fond sombre */
   --titre: "BBH Bogle", Georgia, "Times New Roman", serif;
   --texte: "BBH Bogle", Georgia, "Times New Roman", serif;
 }
